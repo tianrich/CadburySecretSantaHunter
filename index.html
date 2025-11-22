@@ -1,6 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head><script async src="https://www.googletagmanager.com/gtag/js?id=G-40SR2ZFL0S"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-40SR2ZFL0S', {
+    page_title: document.title,
+    page_path: window.location.pathname,
+    send_page_view: true
+  });
+
+  // Auto-track every chocolate win
+  function trackChocolateWin(link) {
+    gtag('event', 'chocolate_secured', {
+      event_category: 'Cadbury Secret Santa',
+      event_label: 'Active Link Captured',
+      value: 1,
+      redemption_link: link
+    });
+  }
+</script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>Cadbury Secret Santa Intelligence Hub - Free Chocolate Monitoring System by @paparichens</title>
